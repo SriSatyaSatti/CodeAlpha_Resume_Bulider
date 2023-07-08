@@ -4,8 +4,6 @@ function sub() {
   var lname = document.getElementById("b_lname").value;
   var age = document.getElementById("b_age").value;
   var email = document.getElementById("b_email").value;
-  var password = document.getElementById("b_password").value;
-  var cpassword = document.getElementById("b_cpassword").value;
   var faname = document.getElementById("b_faname").value;
   var moname = document.getElementById("b_moname").value;
   var pin = document.getElementById("b_pin").value;
@@ -14,18 +12,6 @@ function sub() {
     document.getElementById("val1").innerHTML ="**Enter valid Email ID";
     f=1;
     }
-  if(password.indexOf('@')===-1 || password.indexOf('$')===-1 || password.indexOf('&')===-1)
-  {
-  }else{
-  document.getElementById("val2").innerHTML ="**Enter Special Characters in Password";
-  f=1;
-  }
-  if(password==cpassword )
-  {
-  }else{
-    document.getElementById("val3").innerHTML ="**Enter Same password";
-    f=1;
-  }
   if(f==1){
     alert("Enter Valid Credentials");
   }else{
